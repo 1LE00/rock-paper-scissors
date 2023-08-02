@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-families */
+  --ff-default: "Barlow Semi Condensed", sans-serif;
+}
+
+/* Custom properties */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-default);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  -webkit-user-drag: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  appearance: none;
+  border: none;
+}
+
+button,
+a,
+section {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom properties */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(217, 16%, 45%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 71%, 31%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(230, 71%, 31%, 0.8);
+}
+
+::selection {
+  color: hsl(349, 71%, 52%);
+  background-color: hsl(217, 16%, 45%, 0.2);
+}
