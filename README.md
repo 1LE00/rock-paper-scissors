@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Rocks, Paper, Scissors, Lizard, Spock](https://1LE00.github.io/rock-paper-scissors)
+- Live Site URL: [Rocks, Paper, Scissors, Lizard, Spock](https://rock-paper-scissors-1le00.vercel.app/)
 
 ## My process
 
